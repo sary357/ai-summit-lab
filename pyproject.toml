@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "ai-summit-lab"
+version = "0.1.0"
+description = ""
+authors = ["Fu-Ming Tsai <sary357@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.32.3"
+jupyterlab = "^4.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
