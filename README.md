@@ -7,9 +7,19 @@
 ```
 $ curl -sSL https://install.python-poetry.org | python3 -
 ```
-## Jupyter notebook
+
+## install necessary python libraries
 ```
-$ poetry add jupyter
+$ poetry add langchain openai langchain_community langchain-openai python-dotenv
+notebook 
+```
+
+# Folder structure
+```
+├── README.md: Introduction
+├── LLM: sample codes that generates AWS Lambda codes
+└── serverless_framework_api: API codes that can receive request from sample codes and execute them
+
 ```
 
 # References
