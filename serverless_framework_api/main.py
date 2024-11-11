@@ -24,9 +24,12 @@ class LambdaCodes(BaseModel):
 
 @app.post("/v1/exec_aws_lambda/")
 async def execute_lambda_code(lambdaCodes: LambdaCodes):
-    logger.info('Got lambda parameters: %s', lambdaCodes)
-    save_status=False
-    return {"status": "ok"}
+    logger.info('Got AWS lambda parameters: %s', lambdaCodes)
+    ret_status=True
+    if ret_status:
+        return {"status": "ok"}
+    else:
+        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Internal server error")
 
 @app.get("/v1/health-check")
 async def health_check():
