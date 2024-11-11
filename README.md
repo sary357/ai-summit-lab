@@ -10,8 +10,7 @@ $ curl -sSL https://install.python-poetry.org | python3 -
 
 ## install necessary python libraries
 ```
-$ poetry add langchain openai langchain_community langchain-openai python-dotenv
-notebook 
+$ poetry add langchain openai langchain_community langchain-openai python-dotenv notebook fastapi  uvicorn
 ```
 
 # Folder structure
