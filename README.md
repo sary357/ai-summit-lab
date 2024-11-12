@@ -31,3 +31,18 @@ $ poetry shell
 ```
 $ jupyter notebook --ip 0.0.0.0
 ```
+
+## serverless framework
+### with root privileges
+- install npm
+```
+$ yum install -y npm
+```
+- install serverless framework
+```
+$ npm i serverless -g
+```
+- update serverless framework
+```
+$ serverless update
+```
