@@ -20,6 +20,7 @@ fastapi = "^0.115.4"
 uvicorn = "^0.32.0"
 aws-cdk-lib = "2.166.0"
 constructs = "^10.4.2"
+langgraph = "^0.2.60"
 
 
 [build-system]
